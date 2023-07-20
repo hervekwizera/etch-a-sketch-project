@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>sketch</title>
+</head>
+<body>
+    <div class="container">
+        <div class="title">
+            <h1>etch-a-sketch</h1>
+        </div>
+        <div class="mode"></div>
+        <div class="content">
+            <div class="buttons">
+                
+                <button id="clear-board" onclick="clearBoard()">Erasor</button>
+                <button onclick="resetBoard()">Reset</button>
+                <div>
+                    <input type="range" value="5" id="size-slider" min="1" max="100" >
+                   <br><button onclick="populateBoard()">set size</button>
+                </div>
+                <div class="colors">
+                <label for="" class="titlec">Colors</label>
+                    <ul class="options">
+                        <li class="option"></li>
+                        <li class="option selected"></li>
+                        <li class="option"></li>
+                        <li class="option"></li>
+                        <li class="option">
+                            <input type="color" id="color-picker" value="rgb(2, 233, 250)">
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="board"></div>
+        </div>
+        <footer>
+            <p>copyright &copy;
+                <script>
+                    document.write(new Date().getFullYear())
+                </script>
+                kwizera herve
+            </p>
+            <a href="http://github.com/AimePazzo" target="_blank"><i class="fa-brands fa-github"></i></i></a>
+        </footer>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
